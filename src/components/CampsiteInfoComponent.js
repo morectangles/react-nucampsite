@@ -119,7 +119,7 @@ class CommentForm extends Component {
 
     handleSubmit(values) {
         this.toggleModal();
-        this.props.postComment(this.props.campsiteId, values.rating, values.author, values.text);
+        this.props.postComment(this.props.campsiteId, values.rating, values.text, values.author);
     }
 
     render() {
