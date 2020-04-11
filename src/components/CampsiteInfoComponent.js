@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardBody, CardText, CardTitle, Breadcrumb, BreadcrumbItem, Button, Modal, ModalHeader, ModalBody, Row, Col, Label } from 'reactstrap';
+import { Card, CardImg, CardBody, CardText, Breadcrumb, BreadcrumbItem, Button, Modal, ModalHeader, ModalBody, Row, Col, Label } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
@@ -16,7 +16,7 @@ function RenderCampsite({campsite}) {
             <FadeTransform
                 in 
                 transformProps={{
-                    exitTransform: 'scale(0.5) translateY(-50%)'
+                    exitTransform: 'scale(0.9)'
                 }}>
                 <Card>
                     <CardImg top src={baseUrl + campsite.image} alt={campsite.name} />
